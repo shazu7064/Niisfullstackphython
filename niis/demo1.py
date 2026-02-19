@@ -1,0 +1,6 @@
+print("enter four no")
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+print("add=",a+b+c+d)
