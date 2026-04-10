@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>I Love you? 💖</title>
+    <style>
+        body {
+            background-color: #f8a5c2;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            display: inline-block;
+            box-shadow: 0 0 10px gray;
+        }
+
+        img {
+            width: 150px;
+        }
+
+        h2 {
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .yes {
+            background-color: #ff4d6d;
+            color: white;
+        }
+
+        .no {
+            background-color: gray;
+            color: white;
+            position: relative;
+        }
+
+        #msg {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #ff4d6d;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <img src="https://i.imgur.com/3ZQ3Z4P.png" alt="cute">
+    <h2>I love you? 🥺</h2>
+    <p>mashu is all yours</p>
+
+    <button class="yes" onclick="yesClick()">Yes 💖</button>
+    <button class="no" onmouseover="moveBtn(this)">No 😜</button>
+
+    <p id="msg"></p>
+</div>
+
+<script>
+function yesClick() {
+    document.getElementById("msg").innerHTML = 
+    "Aww 🥺💖 I love you too!! 💑";
+}
+
+function moveBtn(btn) {
+    btn.style.position = "absolute";
+    btn.style.top = Math.random() * 300 + "px";
+    btn.style.left = Math.random() * 300 + "px";
+}
+</script>
+
+</body>
+</html>
