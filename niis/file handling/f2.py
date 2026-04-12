@@ -1,3 +1,3 @@
-f=open("data.txt","a")
-f.write("ok")
+f=open("data.txt","r")
+print(f.read line
 f.close()
